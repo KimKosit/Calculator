@@ -19,10 +19,10 @@ export default class App extends Component {
 
   calculationResult() {
     const text = this.state.resultText;
-    console.log(text+"="+eval(text))
     this.setState({
       calculationText: eval(text),
     });
+    console.log(text+"="+eval(text))
   }
 
   validate() {
